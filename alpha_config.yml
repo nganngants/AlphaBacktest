@@ -1,0 +1,4 @@
+start_sim_date: 2017-01-01
+end_sim_date: 2022-01-01
+
+alpha: examples.alpha_sma
