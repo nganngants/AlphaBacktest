@@ -38,7 +38,9 @@ You need to have an assets file which lists the assets symbol you want to backte
 
 ### Writing an Alpha
 
-Please refer to `examples/` for examples of writing an alpha. Basically, your alpha is a class whihc inherit alpha_backtest.AlphaBase. You need to implement `generate(self, di):` method to set the signal to `self.alpha`.
+Please refer to `examples/` for examples of writing an alpha. Basically, your alpha is a class which inherits alpha_backtest.AlphaBase. You need to implement `generate(self, di):` method to set the signal to `self.alpha`. 
+
+The data used in this system is price-volume data. In your alpha, by accessing `self.data[di][ai]` (where di is the data index and ai is the asset index), you will have a dict which contains price-volume data of the ai-th asset
 
 ### Prepare Config
 
